@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎹</text></svg>">
+<title>Piano Music</title>
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    html, body {
+      margin: 0; 
+      padding: 0; 
+      height: 100%; 
+      background: black;
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      overflow: hidden;
+    }
+
+    .container {
+      width: 300px;
+      height: 100vh;
+      padding-bottom: 100px;      /* bottom padding */
+      box-sizing: border-box;    /* include padding in height */
+      overflow: hidden;
+      border-radius: 0 0 25px 25px;
+      box-shadow: 0 0 40px rgba(0,0,0,0.6);
+      position: relative;
+      margin: 0;
+    }
+
+    iframe {
+      width: 267px;
+      height: calc(100% - 30px); /* reduce height by padding */
+      border: none;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform-origin: top center;
+      transform: translateX(-50%) scale(1.15);
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <iframe 
+      src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F857054160235324%2F&show_text=false&width=267&t=0"
+      scrolling="no"
+      frameborder="0"
+      allowfullscreen="true"
+      allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+    ></iframe>
+  </div>
+</body>
+</html>
