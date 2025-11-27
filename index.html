@@ -53,3 +53,26 @@
   </div>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Unselectable Text Demo</title>
+  <style>
+    /* Make all text unselectable */
+    html, body {
+      user-select: none;              /* Standard */
+      -webkit-user-select: none;      /* Chrome/Safari */
+      -moz-user-select: none;         /* Firefox */
+      -ms-user-select: none;          /* Old IE/Edge */
+    }
+
+    /* Allow selection in form fields */
+    input, textarea {
+      user-select: text;
+      -webkit-user-select: text;
+      -moz-user-select: text;
+      -ms-user-select: text;
+    }
+
+
